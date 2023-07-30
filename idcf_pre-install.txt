@@ -1,0 +1,5 @@
+1. Donwload and Install VSCODE https://code.visualstudio.com/
+2. Donwload and Install python 3.10 https://www.python.org/downloads/release/python-3100/
+3. Unzip MVP.zip to local folder and unzip.
+4. Open terminal, located to folder MVP, run "pip install -r requirement.txt"
+5. Open VSCode, Open folder MVP, start play.

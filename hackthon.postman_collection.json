@@ -1,0 +1,262 @@
+{
+	"info": {
+		"_postman_id": "afbf11ab-9370-4af7-8d0c-1cfa0813e753",
+		"name": "hackthon",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "7116503"
+	},
+	"item": [
+		{
+			"name": "01-莎士比亚作家",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user\": \"Lucy\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/aoai_chat_gpt35",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"aoai_chat_gpt35"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "02-对话助手",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user_input\": \"I am a gril.Please give me a cup of tea.\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/aoai_chat_markedup_language_gpt35",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"aoai_chat_markedup_language_gpt35"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "03-对话助手",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user_input\": \"I am a gril.Please give me a cup of tea.\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/aoai_completion_gpt3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"aoai_completion_gpt3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "04-问答机器人",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user_input\": \"中国的首都是哪里?\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/aoai_completion_gpt35",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"aoai_completion_gpt35"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "05-对话助手",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user_input\": \"我想说的是石景山\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/aoai_chat_markedup_language_gpt3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"aoai_chat_markedup_language_gpt3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "06-对话助手",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user_input\": \"exit\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/aoai_conversation_chat",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"aoai_conversation_chat"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "07-对话助手",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user_input\": \"can you give me a cup of tea\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/aoai_conversation_chat_steam",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"aoai_conversation_chat_steam"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "08-Demo-注入灵魂的创作",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"role\": \"莎士比亚\",\r\n    \"tech\": \"写作\",\r\n    \"need\": \"用莎士比亚的戏剧风格描写李白的《将进酒》\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/demo_role_wizard_1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"demo_role_wizard_1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "09-Demo-古今对话",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"ancientRole\": \"曹操\",\r\n    \"todayRole\": \"马斯克\",\r\n    \"topic\": \"科技创新\",\r\n    \"round\": 2,\r\n    \"need\": \"我想听听他们对于科技创新的对话\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/demo_role_wizard_2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"demo_role_wizard_2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
